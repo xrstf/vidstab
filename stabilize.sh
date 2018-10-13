@@ -33,7 +33,7 @@ for filename in $files; do
   SECONDS=0
   vidstabtmp=/tmp/transform_vectors.trf
   inputfile="$WORKDIR/$filename"
-  outputfile="(echo "$WORKDIR/output/$filename" | sed 's/\.mp4/\.mkv/i')"
+  outputfile="$(echo "$WORKDIR/output/$filename" | sed 's/\.mp4/\.mkv/i')"
 
   # download it
   echo "Downloading file..."
