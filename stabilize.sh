@@ -64,6 +64,9 @@ for filename in $files; do
 
   # let the magic happen
   ffmpeg2 \
+    -hide_banner \
+    -loglevel fatal \
+    -stats \
     -i "$inputfile" \
     -vf "$params" \
     -vcodec libx264 \
